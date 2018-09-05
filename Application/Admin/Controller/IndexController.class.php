@@ -24,7 +24,7 @@ class IndexController extends Controller {
         $data['code'] = 0 ;
         $data['msg'] = $errmsg ? $errmsg : '';
         $data['count'] = $count ? $count : '';
-        $data['date'] = $date ? $date : '';
+        $data['data'] = $date ? $date : '';
         $this->ajaxReturn($data);
     }
 }

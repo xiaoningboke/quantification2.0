@@ -74,16 +74,9 @@
             {field: 'nt_number', title: '学号', width:60, align:"center"},
             {field: 'nt_name', title: '姓名', width:50},
             {field: 'classes', title: '班级', align:'center'},
-            {field: 'nt_sex', title: '性别',  align:'center',templet:"#newsStatus"},
-            {field: 'nt_email', title: '邮箱',  align:'center',templet:"#newsStatus"},
-            {field: 'nt_headmaster', title: '班主任姓名',  align:'center',templet:"#newsStatus"},
-            {field: 'newsLook', title: '浏览权限', align:'center'},
-            {field: 'newsTop', title: '是否置顶', align:'center', templet:function(d){
-                return '<input type="checkbox" name="newsTop" lay-filter="newsTop" lay-skin="switch" lay-text="是|否" '+d.newsTop+'>'
-            }},
-            {field: 'newsTime', title: '发布时间', align:'center', minWidth:110, templet:function(d){
-                return d.newsTime.substring(0,10);
-            }},
+            {field: 'nt_sex', title: '性别',  align:'center'},
+            {field: 'nt_email', title: '邮箱',  align:'center'},
+            {field: 'nt_headmaster', title: '班主任姓名',  align:'center'},
             {title: '操作', width:170, templet:'#newsListBar',fixed:"right",align:"center"}
         ]]
     });
